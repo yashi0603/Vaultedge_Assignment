@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section>
+        <div class="row">
+            <div class="col col-3"></div>
+            <div class="col col-6">
+                <div class="container">
+                    <h1 class="d-xl-flex justify-content-xl-center align-items-xl-center"
+                        style="margin: 8px;padding-top: 10px;padding-bottom: 10px;">Assignment</h1>
+                </div>
+                <div class="mb-3 mx-5 d-xl-flex flex-column justify-content-xl-center align-items-xl-center">
+                    <form action="compute" method="post">
+                        {% csrf_token %}
+                        <div>
+                            <input class="form-control" type="file" id="formFile" name="formFile">
+                        </div>
+                        <div class="input-group my-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Angle of Rotation (multiple of 90)</span>
+                            <input type="text" class="form-control" aria-label="angle of rotation input"
+                                aria-describedby="inputGroup-sizing-default" id="rotateAngle" name="rotateAngle">
+                        </div>
+                        <div class="input-group my-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Page Number</span>
+                            <input type="text" class="form-control" aria-label="Page number input"
+                                aria-describedby="inputGroup-sizing-default" id="pageNo" name="pageNo">
+                        </div>
+                        <div class="my-4 d-xl-flex flex-column justify-content-xl-center align-items-xl-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    
+                    <div class="col col-3"></div>
+                </div>
+    </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
